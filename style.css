@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Rubik-normal";
+  font-weight: 400;
+  src: url(fonts/Rubik.ttf);
+}
+@font-face {
+  font-family: "Rubik-bold";
+  font-weight: 700;
+  src: url(fonts/Rubik.ttf);
+}
+/* обнуляем */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+/* погна */
+body {
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  font-family: "Rubik-normal", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.header .logo {
+  display: flex;
+  justify-content: center;
+  gap: 6.12px;
+  margin-left: 150px;
+}
+.header .logo img {
+  width: 35px;
+  height: 36.23px;
+}
+.header .logo h1 {
+  width: 104px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 6.12px;
+}
+.header .logo h1 span {
+  font-family: "Rubik-bold", "Arial", sans-serif;
+  font-weight: 700;
+}
+.header .navigation {
+  display: flex;
+  justify-content: center;
+  color: #4F5665;
+  font-size: 16px;
+  gap: 40px;
+}
+.header .all-button {
+  font-size: 16px;
+}
+.header .all-button .margin-button {
+  margin-right: 30px;
+  font-weight: 600;
+}
+.header .all-button .border-button {
+  color: #F53855;
+  font-weight: 600;
+  border: 1px solid #F53855;
+  border-radius: 50px;
+  padding: 13px 45px;
+}
+
+main .main-first {
+  display: flex;
+  flex-direction: row;
+  margin-top: 102px;
+}
+main .main-first .colomn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+main .main-first .colomn h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+main .main-first .colomn h1 span {
+  font-family: "Rubik-bold", "Arial", sans-serif;
+  font-weight: 700;
+}
+main .main-first .colomn h3 {
+  font-size: 16px;
+  font-weight: 200;
+  color: #4F5665;
+}
+main .main-first .colomn h3 span {
+  font-family: "Rubik-bold", "Arial", sans-serif;
+  font-weight: 700;
+}
+main .main-first .colomn button {
+  background-color: #F53838;
+  color: #FFFFFF;
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 17.5px 77.5px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 18px 34px 52px -8px rgba(245, 56, 56, 0.4);
+}
+main .main-first .colomn .cover {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40.76px;
+}
+main .main-first .colomn .cover img {
+  width: 611.24px;
+  height: 382.44px;
+  margin-left: 40.76px;
+}
+main .layout {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin: 137px 60px 0 150px;
+  box-shadow: 30px 45px 39px 37px rgba(13, 16, 37, 0.12);
+}
+main .layout .border {
+  height: 125.57px;
+  margin-top: 37.21px;
+}
+main .layout .case {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 67px 100px;
+}
+main .layout .case img {
+  height: 55px;
+  width: 55px;
+}
+main .layout .case h1 {
+  font-size: 25px;
+  margin-left: 36.5px;
+}
+main .layout .case h1 p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #4F5665;
+  margin-top: 5px;
+}
+main .imgAndList {
+  display: flex;
+  flex-direction: row;
+  margin-top: 95.83px;
+  margin-left: 184px;
+  gap: 169.48px;
+}
+main .imgAndList img {
+  width: 508.12px;
+  height: 414.71px;
+}/*# sourceMappingURL=style.css.map */
