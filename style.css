@@ -171,9 +171,113 @@ main .imgAndList {
   flex-direction: row;
   margin-top: 95.83px;
   margin-left: 184px;
+  margin-bottom: 113.19px;
   gap: 169.48px;
 }
-main .imgAndList img {
+main .imgAndList .img {
   width: 508.12px;
   height: 414.71px;
+}
+main .imgAndList .colomn2 {
+  display: flex;
+  flex-direction: column;
+}
+main .imgAndList .colomn2 h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+main .imgAndList .colomn2 h3 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #4F5665;
+}
+main .imgAndList .list {
+  display: flex;
+  flex-direction: column;
+}
+main .imgAndList .list .element {
+  display: flex;
+  flex-direction: row;
+}
+main .imgAndList .list .element img {
+  height: 24px;
+  width: 24px;
+  margin-top: 16px;
+  margin-right: 10px;
+}
+main .imgAndList .list .element span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #4F5665;
+  margin: 20px 10px 15px 0;
+}
+
+section {
+  background-color: #F5F5F5;
+}
+section .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .heading h1 {
+  font-size: 35px;
+  margin-top: 80.27px;
+}
+section .heading h3 {
+  font-size: 16px;
+  color: #4F5665;
+  font-weight: 300;
+}
+section .heading h3 p {
+  margin-left: 228px;
+}
+section .cards {
+  display: flex;
+  flex-direction: row;
+  margin-left: 176px;
+  gap: 50px;
+  margin-right: 176px;
+  margin-bottom: 150px;
+}
+section .cards .card {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 760px;
+  border: 2px solid #DDDDDD;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+section .cards .card img {
+  width: 144.9px;
+  height: 165.37px;
+  margin: 79.63px 92.55px 30px 92.55px;
+}
+section .cards .card h1 {
+  font-size: 18px;
+  margin: 0 104px 30px 104px;
+  text-align: center;
+}
+section .cards .card .list {
+  display: flex;
+  flex-direction: column;
+}
+section .cards .card .list .element {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+section .cards .card .list .element img {
+  height: 24px;
+  width: 24px;
+  margin-top: 16px;
+  margin-right: 10px;
+}
+section .cards .card .list .element span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #4F5665;
+  margin: 20px 10px 15px 0;
 }/*# sourceMappingURL=style.css.map */

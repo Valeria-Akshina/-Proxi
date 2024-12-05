@@ -206,11 +206,136 @@ main {
         @include flex-row;
         margin-top: 95.83px;
         margin-left: 184px;
+        margin-bottom: 113.19px;
         gap: 169.48px;
 
-        img {
+        .img {
             width: 508.12px;
             height: 414.71px;
         }
+
+        .colomn2 {
+            display: flex;
+            flex-direction: column; 
+
+            h1 {
+                font-size: 35px;
+                font-weight: 500;
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: 300;
+                color: #4F5665;
+            }
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+
+            .element {
+                display: flex;
+                flex-direction: row;
+
+
+                img {
+                    height: 24px;
+                    width: 24px;
+                    margin-top: 16px;
+                    margin-right: 10px;
+                }
+    
+                span {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #4F5665;
+                    margin: 20px 10px 15px 0;
+                }
+            }
+        }
+    }
+}
+
+section {
+    background-color: #F5F5F5;
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h1 {
+            font-size: 35px;
+            margin-top: 80.27px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: #4F5665;
+            font-weight: 300;
+
+            p {
+                margin-left: 228px;
+            }
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        margin-left: 176px;
+        gap: 50px;
+        margin-right: 176px;
+        margin-bottom: 150px;
+
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 330px;
+            height: 760px;
+            border: 2px solid #DDDDDD;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            margin-top: 60px;
+
+            img {
+                width: 144.9px;
+                height: 165.37px;
+                margin: 79.63px 92.55px 30px 92.55px;
+            }
+
+            h1 {
+                font-size: 18px;
+                margin: 0 104px 30px 104px;
+                text-align: center;
+            }
+
+            .list {
+                display: flex;
+                flex-direction: column;
+    
+                .element {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0;
+    
+                    img {
+                        height: 24px;
+                        width: 24px;
+                        margin-top: 16px;
+                        margin-right: 10px;
+                    }
+        
+                    span {
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: #4F5665;
+                        margin: 20px 10px 15px 0;
+                    }
+                }
+            }
+        } 
     }
 }
