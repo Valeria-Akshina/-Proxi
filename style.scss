@@ -1,3 +1,4 @@
+//шрифт подключаем
 @font-face {
     font-family: 'Rubik-normal';
     font-weight: 400;
@@ -10,6 +11,14 @@
     src: url(fonts/Rubik.ttf);
 }
 
+//тени 
+@mixin box-shadow ($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+  }
+
+//общие классы для флексов
 @mixin flex-conteiner-center {
     display: flex;
     justify-content: center;
@@ -20,6 +29,7 @@
     flex-direction: row;
 }
 
+//шрифт
 @mixin fonts-400 {
     font-family: 'Rubik-normal', 'Arial', sans-serif;
     font-weight: 400;
@@ -151,7 +161,7 @@ main {
                 padding: 17.5px 77.5px;
                 margin-top: 50px;
                 border-radius: 10px;
-                box-shadow: 18px 34px 52px -8px rgba(245, 56, 56, 0.40);
+                @include box-shadow(18px 34px 52px -8px rgba(245, 56, 56, 0.40));
             }
 
             .cover {
@@ -173,8 +183,9 @@ main {
         @include flex-row;
         justify-content: center;
         gap: 30px;
+        border-radius: 10px;
         margin: 137px 60px 0 150px;
-        box-shadow: 30px 45px 39px 37px rgba(13, 16, 37, 0.12);
+        @include box-shadow(30px 45px 39px 37px rgba(13, 16, 37, 0.12));
 
         .border {
             height: 125.57px;
@@ -367,7 +378,7 @@ section {
                     cursor: pointer;
                     color: #DDDDDD;
                     background-color: #F53838;
-                    box-shadow: 18px 34px 52px -8px rgba(245, 56, 56, 0.40);
+                    @include box-shadow(18px 34px 52px -8px rgba(245, 56, 56, 0.40));
                 }
             }
         } 
@@ -400,6 +411,9 @@ section {
         }
 
         .img-two {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 1135.64px;
             height: 208.32px;
             margin: 6.45px 0 50px 144.14px;
@@ -459,7 +473,7 @@ section {
                     padding: 17.5px 77.5px;
                     margin-top: 86.5px;
                     border-radius: 10px;
-                    box-shadow: 18px 34px 52px -8px rgba(245, 56, 56, 0.40);
+                    @include box-shadow(18px 34px 52px -8px rgba(245, 56, 56, 0.40));
                 }
         }
     }
@@ -525,27 +539,6 @@ footer {
         }
     }
 
-    .post2 {
-        display: flex;
-        flex-direction: column;
-
-        h1 {
-            font-size: 16px;
-            width: 71px;
-            height: 30px;
-
-        }
-
-        h4 {
-            font-weight: 300;
-            font-size: 14px;
-            color: #4F5665;
-            width: 74px;
-            height: 30px;
-
-        }
-    }
-
     .post3 {
         display: flex;
         flex-direction: column;
@@ -554,6 +547,7 @@ footer {
             font-size: 16px;
             width: 71px;
             height: 30px;
+
         }
 
         h4 {
@@ -562,25 +556,7 @@ footer {
             color: #4F5665;
             width: 74px;
             height: 30px;
-        }
-    }
 
-    .post3 {
-        display: flex;
-        flex-direction: column;
-
-        h1 {
-            font-size: 16px;
-            width: 71px;
-            height: 30px;
-        }
-
-        h4 {
-            font-weight: 300;
-            font-size: 14px;
-            color: #4F5665;
-            width: 74px;
-            height: 30px;
         }
     }
 }
