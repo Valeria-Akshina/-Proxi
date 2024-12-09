@@ -342,6 +342,44 @@ section .section-two .img-three {
   margin-left: 150px;
   margin-bottom: 181.22px;
 }
+section .comments {
+  display: flex;
+}
+section .comments h1 {
+  text-align: center;
+  font-size: 35px;
+  color: #0B132A;
+  margin-top: 150px;
+}
+section .comments h5 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #4F5665;
+}
+section .comments .com {
+  display: flex;
+  flex-direction: row;
+}
+section .comments .com .com1 {
+  display: flex;
+}
+section .comments .com .com1 img {
+  width: 182px;
+  height: 50px;
+}
+section .comments .com .com1 .rate {
+  display: flex;
+  flex-direction: row;
+}
+section .comments .com .com1 .rate p {
+  font-size: 16px;
+  font-weight: 300;
+}
+section .comments .com .com1 .rate img {
+  width: 16px;
+  height: 16px;
+}
 section .position {
   position: absolute;
   display: flex;
